@@ -1,10 +1,10 @@
 :root {
     --primary-color: #2a9d8f;      
     --secondary-color: #264653;    
-    --accent-color: #e9c46a;       
-    --background-light: #f8f9fa;   
-    --text-color: #343a40;         
-    --white: #ffffff;
+    --accent-color: #e9c46a; 
+    --background-light: #f8f9fa;        
+    --text-color: #0a0a0a;         
+    --white: #e6dada;
 
     --font-heading: 'Roboto', sans-serif;
     --font-body: 'Poppins', sans-serif;
@@ -21,6 +21,8 @@ body {
     font-family: var(--font-body);
     color: var(--text-color);
     line-height: 1.7;
+
+    
 }
 
 h1, h2, h3 {
