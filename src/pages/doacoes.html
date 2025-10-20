@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça um Doação-Ong EcoAção </title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/index.html" class="header-logo">
+                <img src="../assets/imagens/logo2.png" alt="Pagina inicial da ong EcoAção" width="100">
+                <h1>ONG ECOAÇÃO</h1>
+            </a>
+            <nav aria-label="navegação principal">
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="doacoes.html">Doações</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="conteudo-principal">
+        <section class="doacao">
+            <div class="container">
+                <h2>Sua doação transforma o futuro do nosso planeta</h2>
+                <p>Cada contribuição, não importa o valor, nos ajuda a plantar mais árvores, proteger ecossistemas e educar comunidades. Faça parte desta mudança! </p>
+            </div>
+        </section>
+
+        <section id="formulario-doacao" class="container">
+            <h2>Escolha como ajudar</h2>
+
+            <form action="#" method="post" class="form-doacao">
+                <fieldset class="tipo-doacao">
+                    <legend>Frequência da Doação</legend>
+
+                    <div class="opcoes">
+
+                        <input type="radio" id="mensal" name="Frequencia" value="mensal" checked>
+                        <label for="mensal">Mensal</label>
+
+                        <input type="radio" id="unica" name="Frequencia" value="unica"> 
+                        <label for="unica">Doação Única</label>
+                    </div>
+                </fieldset>
+                <fieldset class="doacao-valor">
+                    <legend>
+                        Escolha um valor
+                    </legend>
+                    <div class="opcoes-valor">
+                        <div>
+                            <input type="radio" id="valor25"  name="valor" value="25" checked>
+                            <label for="valor25">R$ 25</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="valor50"  name="valor" value="50">
+                            <label for="valor50">R$ 50</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="valor100"  name="valor" value="100">
+                            <label for="valor100">R$ 100</label>
+                        </div>
+                        
+                    </div>
+
+                    <label for="outro-valor" class="outro-valor">Outro Valor(R$)</label>
+                    <input type="number" name="outro-valor" id="outro-valor" placeholder="ex 10" min="1">
+                </fieldset>
+                <fieldset class="doacao-pagamento">
+                    <legend>Forma de Pagamento</legend>
+                    <p>Ao clicar em doar, você será direcionado para um ambiente seguro para concluir o pagemento via Pix ou Cartão de Crédito</p>
+                </fieldset>
+
+                <button type="submit" class="botao-doar">Continuar para Doação</button>
+            </form>
+        </section>
+        <section class="impacto-doacoes">
+            <h2>Veja o impacto  da sua contribuição</h2>
+            <ul>
+                <li><strong>Com R$ 25</strong>, você nos ajuda a comprar sementes de árvores nativas.</li>
+                <li><strong>Com R$ 50</strong>, você financia a limpeza de 10m² de uma área de mangue.</li>
+                <li><strong>Com R$ 100</strong>, você apoia uma oficina de educação ambiental em uma escola local.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ong EcoAção. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Caroline Oliveira</p>
+        </div>
+    </footer>
+</body>
+</html>

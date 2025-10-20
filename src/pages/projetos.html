@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Projetos-Ong EcoAção</title>
+</head>
+<body>
+    <header>
+        <div class="container header-logo">
+            <img src="../assets/imagens/logo2.png" alt="logo EcoAção" width="100">
+            <h1>ONG ECOAÇÃO</h1>
+           <nav>
+            <ul>
+                 
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="../pages/doacoes.html">Doações</a></li>
+            </ul>
+           </nav>
+        </div>
+    </header>
+    <main>
+        <section id="projetos-ativos">
+
+            <h2 class="titulo">Projetos Ativos</h2>
+            <p class="subtitulo">Faça parte da mudança! Escolha um projeto e junte-se a nós como voluntario</p>
+
+            <div class="projetos">
+                <article class="card-projeto">
+                    <img src="../assets/imagens/reflorestamento.webp" alt="" width="100">
+                    <div class="card-conteudo">
+                        <h3 class="titulo">Reflorestamento de nascentes</h3>
+                        <p class="card-descricao">Estamos recuperando as nascentes da Bacia do Rio Verde, plantando árvores nativas para proteger nossas fontes de água e restaurar a biodiversidade local </p>
+                        <button class="btn btn-principal btn-voluntariar" data-projeto-nome="Reflorestamento de Nascentes">
+                            Quero ser voluntário
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card-projeto">
+                    <img src="../assets/imagens/escola.webp" alt="" width="100">
+                    <div class="card-conteudo">
+                        <h3 class="titulo">EcoAção nas Escolas</h3>
+                        <p class="card-descricao">Levamos educação ambiental para escolas públicas, com oficinas sobre reciclagem, compostagem e consumo consciente, formando a próxima geração de defensores do planeta. </p>
+                        <button class="btn btn-principal btn-voluntariar" data-projeto-nome="EcoAção nas Escolas">
+                            Quero ser voluntário
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card-projeto">
+                    <img src="../assets/imagens/limpezaderio.webp" alt="" width="100">
+                    <div class="card-conteudo">
+                        <h3 class="titulo">Guardiões do Litoral</h3>
+                        <p class="card-descricao">Realizamos mutirões mensais para limpeza das praias da nossa região, removendo plásticos e outros resíduos para proteger a vida marinha e a saúde do oceano. </p>
+                        <button class="btn btn-principal btn-voluntariar" data-projeto-nome="Guardiões do Litoral">
+                            Quero ser voluntário
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <div id="modal-confirmacao" class="modal-overlay">
+    <div class="modal-conteudo">
+        
+        <div id="modal-passo-1">
+            <h2>Inscrição para o projeto:</h2>
+            <strong id="modal-nome-projeto"></strong>
+            <p>Você já possui cadastro em nosso site?</p>
+            <div class="modal-botoes">
+                <button id="btn-confirmar-voluntariado" class="btn btn-principal">Sim, me voluntariar</button>
+                <a href="cadastro.html" class="btn btn-secundario">Não, ir para o cadastro</a>
+            </div>
+        </div>
+
+        <div id="modal-passo-2">
+            <h2>Sucesso! ✅</h2>
+            <p id="mensagem-sucesso"></p>
+            <button id="btn-fechar-modal" class="btn btn-principal">Fechar</button>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
