@@ -3,87 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossos Projetos-Ong EcoAção</title>
+    <title>Nossos Projetos - Ong EcoAção</title>
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/projetos.css">
 </head>
 <body>
     <header>
-        <div class="container header-logo">
-            <img src="../assets/imagens/logo2.png" alt="logo EcoAção" width="100px">
-            <h1>ONG ECOAÇÃO</h1>
-           <nav>
-            <ul>
-                 
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contatos.html">Contatos</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="doacoes.html">Doações</a></li>
-            </ul>
-           </nav>
+        <div class="header-container">
+            <input type="checkbox" id="menu-checkbox">
+            <a href="/index.html" class="header-logo">
+                <img src="../assets/imagens/logo2.png" alt="Logo da ONG EcoAção" width="80">
+                <h1>ONG ECOAÇÃO</h1>
+            </a>
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li><a href="/index.html">Início</a></li>
+                    <li>
+                        <a href="projetos.html">Projetos</a>
+                        <ul class="submenu">
+                            <li><a href="#nascentes">Guardiões das Nascentes</a></li>
+                            <li><a href="#escolas">EcoAção nas Escolas</a></li>
+                            <li><a href="#litoral">Sentinelas do Litoral</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="doacoes.html">Doações</a></li>
+                </ul>
+            </nav>
+            <label for="menu-checkbox" class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         </div>
     </header>
+
     <main>
-        <section id="projetos-ativos">
-
-            <h2 class="titulo">Projetos Ativos</h2>
-            <p class="subtitulo">Faça parte da mudança! Escolha um projeto e junte-se a nós como voluntario</p>
-
-            <div class="projetos">
-                <article class="card-projeto">
-                    <img src="../assets/imagens/reflorestamento.webp" alt="" width="100">
-                    <div class="card-conteudo">
-                        <h3 class="titulo">Reflorestamento de nascentes</h3>
-                        <p class="card-descricao">Estamos recuperando as nascentes da Bacia do Rio Verde, plantando árvores nativas para proteger nossas fontes de água e restaurar a biodiversidade local </p>
-                        <button class="btn btn-principal btn-voluntariar" data-projeto-nome="Reflorestamento de Nascentes">
-                            Quero ser voluntário
-                        </button>
-                    </div>
-                </article>
-
-                <article class="card-projeto">
-                    <img src="../assets/imagens/escola.webp" alt="" width="100">
-                    <div class="card-conteudo">
-                        <h3 class="titulo">EcoAção nas Escolas</h3>
-                        <p class="card-descricao">Levamos educação ambiental para escolas públicas, com oficinas sobre reciclagem, compostagem e consumo consciente, formando a próxima geração de defensores do planeta. </p>
-                        <button class="btn btn-principal btn-voluntariar" data-projeto-nome="EcoAção nas Escolas">
-                            Quero ser voluntário
-                        </button>
-                    </div>
-                </article>
-
-                <article class="card-projeto">
-                    <img src="../assets/imagens/limpezaderio.webp" alt="" width="100">
-                    <div class="card-conteudo">
-                        <h3 class="titulo">Guardiões do Litoral</h3>
-                        <p class="card-descricao">Realizamos mutirões mensais para limpeza das praias da nossa região, removendo plásticos e outros resíduos para proteger a vida marinha e a saúde do oceano. </p>
-                        <button class="btn btn-principal btn-voluntariar" data-projeto-nome="Guardiões do Litoral">
-                            Quero ser voluntário
-                        </button>
-                    </div>
-                </article>
-            </div>
+        <section id="projetos-intro">
+            <h2 class="titulo-pagina">Conheça Nossas Frentes de Ação</h2>
+            <p class="subtitulo-pagina">Cada projeto é uma semente de mudança. Descubra como estamos transformando a realidade ambiental da nossa região e junte-se a nós.</p>
         </section>
+
+        <div class="projetos-container">
+
+            <article class="projeto-detalhado" id="nascentes">
+                <div class="projeto-imagem">
+                    <img src="../assets/imagens/reflorestamento.webp" alt="Mãos segurando uma muda de árvore para reflorestamento">
+                </div>
+                <div class="projeto-info">
+                    <h3>Guardiões das Nascentes</h3>
+                    <h4>Visão Geral</h4>
+                    <p>Uma missão vital para semear o futuro hídrico e ecológico de nossa região. Ao restaurar a vegetação nativa no entorno das nascentes da Bacia do Rio Verde, estamos protegendo este recurso insubstituível e garantindo que a água continue a brotar, pura e abundante.</p>
+                    
+                    <h4>Nossos Objetivos</h4>
+                    <ul class="lista-objetivos">
+                        <li>Recuperar 15 hectares de áreas de preservação.</li>
+                        <li>Plantar 20.000 mudas de mais de 50 espécies nativas.</li>
+                        <li>Engajar e treinar 200 voluntários da comunidade.</li>
+                    </ul>
+                    <div class="projeto-cta">
+                        <button class="btn btn-voluntariar" data-projeto-nome="Guardiões das Nascentes">
+                            Quero me inscrever neste projeto!
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="projeto-detalhado" id="escolas">
+                <div class="projeto-imagem">
+                    <img src="../assets/imagens/escola.webp" alt="Crianças aprendendo sobre meio ambiente em uma sala de aula">
+                </div>
+                <div class="projeto-info">
+                    <h3>EcoAção nas Escolas</h3>
+                    <h4>Visão Geral</h4>
+                    <p>Acreditamos que a educação é a semente da transformação. Este projeto leva oficinas interativas sobre reciclagem, compostagem e consumo consciente para escolas públicas, formando uma nova geração de "Agentes Ambientais Mirins", cidadãos mais conscientes e defensores ativos do planeta.</p>
+
+                    <h4>Nossos Objetivos</h4>
+                    <ul class="lista-objetivos">
+                        <li>Atender 10 escolas públicas da nossa região.</li>
+                        <li>Capacitar diretamente mais de 500 alunos com nossas oficinas.</li>
+                        <li>Implementar 5 hortas escolares 100% funcionais e produtivas.</li>
+                    </ul>
+                    <div class="projeto-cta">
+                        <button class="btn btn-voluntariar" data-projeto-nome="EcoAção nas Escolas">
+                            Quero me inscrever neste projeto!
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="projeto-detalhado" id="litoral">
+                <div class="projeto-imagem">
+                    <img src="../assets/imagens/limpezaderio.webp" alt="Voluntários limpando lixo das margens de um rio">
+                </div>
+                <div class="projeto-info">
+                    <h3>Sentinelas do Litoral</h3>
+                    <h4>Visão Geral</h4>
+                    <p>Nossa resposta direta à crise do plástico nos oceanos. Com mutirões mensais, não apenas removemos resíduos das praias, mas também catalogamos os tipos de lixo encontrados. Esses dados se transformam em relatórios que usamos para pressionar por políticas públicas e conscientizar a comunidade.</p>
+
+                    <h4>Nossos Objetivos</h4>
+                    <ul class="lista-objetivos">
+                        <li>Realizar 12 grandes mutirões de limpeza por ano.</li>
+                        <li>Remover mais de 5 toneladas de resíduos das praias.</li>
+                        <li>Engajar 300 voluntários por ano em ações de limpeza.</li>
+                    </ul>
+                    <div class="projeto-cta">
+                        <button class="btn btn-voluntariar" data-projeto-nome="Sentinelas do Litoral">
+                            Quero me inscrever neste projeto!
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
     </main>
+
     <div id="modal-confirmacao" class="modal-overlay">
-    <div class="modal-conteudo">
-        
-        <div id="modal-passo-1">
-            <h2>Inscrição para o projeto:</h2>
-            <strong id="modal-nome-projeto"></strong>
-            <p>Você já possui cadastro em nosso site?</p>
-            <div class="modal-botoes">
-                <button id="btn-confirmar-voluntariado" class="btn btn-principal">Sim, me voluntariar</button>
-                <a href="cadastro.html" class="btn btn-secundario">Não, ir para o cadastro</a>
+        <div class="modal-conteudo">
+            <div id="modal-passo-1">
+                <h2>Inscrição para o projeto:</h2>
+                <strong id="modal-nome-projeto"></strong>
+                <p>Você já possui cadastro em nosso site?</p>
+                <div class="modal-botoes">
+                    <button id="btn-confirmar-voluntariado" class="btn btn-principal">Sim, me voluntariar</button>
+                    <a href="cadastro.html" class="btn btn-secundario">Não, ir para o cadastro</a>
+                </div>
+            </div>
+            <div id="modal-passo-2" class="hidden">
+                <h2>Sucesso! ✅</h2>
+                <p id="mensagem-sucesso"></p>
+                <button id="btn-fechar-modal" class="btn btn-principal">Fechar</button>
             </div>
         </div>
-
-        <div id="modal-passo-2">
-            <h2>Sucesso! ✅</h2>
-            <p id="mensagem-sucesso"></p>
-            <button id="btn-fechar-modal" class="btn btn-principal">Fechar</button>
-        </div>
-
     </div>
-</div>
+
+    <script src="../assets/js/projetos.js"></script>
+
 </body>
 </html>
