@@ -1,48 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faça sua Doação - ONG EcoAção</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Georgia:wght@700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="/src/assets/css/global.css">
-    <link rel="stylesheet" href="/src/assets/css/doacoes.css">
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <input type="checkbox" id="menu-checkbox">
-            <a href="/index.html" class="header-logo">
-                <img src="../assets/imagens/logo2.png" alt="Logo da ONG EcoAção" width="80">
-                <h1>ONG ECOAÇÃO</h1>
-            </a>
-            <nav aria-label="Navegação principal">
-                <ul>
-                    <li><a href="/index.html">Início</a></li>
-                    <li>
-                        <a href="projetos.html">Projetos</a>
-                        <ul class="submenu">
-                            <li><a href="projetos.html#reflorestamento">Reflorestamento</a></li>
-                            <li><a href="projetos.html#educacao">Educação Ambiental</a></li>
-                            <li><a href="projetos.html#conservacao">Conservação</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-                    <li><a href="doacoes.html">Doações</a></li>
-                </ul>
-            </nav>
-            <label for="menu-checkbox" class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-    </header>
-
     <main id="conteudo-principal">
         <section class="hero-doacao">
             <h2>Sua doação transforma o futuro do nosso planeta</h2>
@@ -50,7 +5,7 @@
         </section>
 
         <section id="formulario-doacao">
-            <form action="#" method="post" class="doacao-form">
+            <form id="form-doacao" action="#" method="post" class="doacao-form" novalidate>
                 <h2>Escolha como ajudar</h2>
                 <fieldset>
                     <legend>Frequência da Doação</legend>
@@ -98,10 +53,3 @@
             </div>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2025 Ong EcoAção. Todos os direitos reservados.</p>
-        <p>Desenvolvido por Caroline Oliveira</p>
-    </footer>
-</body>
-</html>
