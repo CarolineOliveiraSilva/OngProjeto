@@ -1,0 +1,55 @@
+    <main id="conteudo-principal">
+        <section class="hero-doacao">
+            <h2>Sua doação transforma o futuro do nosso planeta</h2>
+            <p>Cada contribuição, não importa o valor, nos ajuda a plantar mais árvores, proteger ecossistemas e educar comunidades. Faça parte desta mudança!</p>
+        </section>
+
+        <section id="formulario-doacao">
+            <form id="form-doacao" action="#" method="post" class="doacao-form" novalidate>
+                <h2>Escolha como ajudar</h2>
+                <fieldset>
+                    <legend>Frequência da Doação</legend>
+                    <div class="opcoes-container">
+                        <input type="radio" id="mensal" name="frequencia" value="mensal">
+                        <label for="mensal">Mensal</label>
+                        <input type="radio" id="unica" name="frequencia" value="unica" checked>
+                        <label for="unica">Doação Única</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Escolha um valor</legend>
+                    <div class="opcoes-container">
+                        <input type="checkbox" id="valor25" name="valor" value="25">
+                        <label for="valor25">R$ 25</label>
+                        <input type="checkbox" id="valor50" name="valor" value="50">
+                        <label for="valor50">R$ 50 <span class="badge">Popular</span></label>
+                        <input type="checkbox" id="valor100" name="valor" value="100">
+                        <label for="valor100">R$ 100</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="outro-valor">Outro Valor (R$)</label>
+                        <input type="number" name="outro-valor" id="outro-valor" placeholder="Ex: 10" min="1">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Forma de Pagamento</legend>
+                    <div class="alert alert-info">
+                        <p>Ao clicar em continuar para doação, você será direcionado para um ambiente seguro para concluir o pagamento via Pix ou Cartão de Crédito.</p>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn">Continuar para Doação</button>
+            </form>
+        </section>
+
+        <section class="impacto-doacao">
+            <h2>Veja o impacto da sua contribuição</h2>
+            <div class="cards-container">
+                <div class="card"><strong>Com R$ 25</strong>, você nos ajuda a comprar sementes de árvores nativas.</div>
+                <div class="card"><strong>Com R$ 50</strong>, você financia a limpeza de 10m² de uma área de mangue.</div>
+                <div class="card"><strong>Com R$ 100</strong>, você apoia uma oficina de educação ambiental em uma escola local.</div>
+            </div>
+        </section>
+    </main>

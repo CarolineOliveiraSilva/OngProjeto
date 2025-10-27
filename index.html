@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG EcoAção - Juntos pelo Planeta</title>
+    
+    <link rel="stylesheet" href="/src/assets/css/global.css">
+    <link rel="stylesheet" href="/src/assets/css/index.css">
+    <link rel="stylesheet" href="/src/assets/css/cadastro.css">
+    <link rel="stylesheet" href="/src/assets/css/doacoes.css">
+    <link rel="stylesheet" href="/src/assets/css/projetos.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <input type="checkbox" id="menu-checkbox">
+            <a href="./index.html" data-link class="header-logo">
+                <img src="src/assets/imagens/logo2.png" alt="Logo da ONG EcoAção" width="80">
+                <h1>ONG ECOAÇÃO</h1>
+            </a>
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li><a href="/index.html" data-link>Início</a></li>
+                    <li id="projetos-menu-item">
+                        <a href="/src/pages/projetos.html" data-link>Projetos</a>
+                        <ul class="submenu">
+                            <li><a href="/src/pages/projetos.html#nascentes" data-link>Reflorestamento</a></li>
+                            <li><a href="/src/pages/projetos.html#escolas" data-link>Educação Ambiental</a></li>
+                            <li><a href="/src/pages/projetos.html#litoral" data-link>Sentinelas do Litoral</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/src/pages/cadastro.html" data-link>Cadastro</a></li>
+                    <li><a href="/src/pages/doacoes.html" data-link>Doações</a></li>
+                </ul>
+            </nav>
+            <label for="menu-checkbox" class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+    
+    <main id="app-root"></main>
+    
+    <div id="modal-voluntario" class="modal-overlay">
+        <div class="modal-conteudo">
+            <div id="modal-passo-1">
+                <h2>Inscrição para o projeto:</h2>
+                <strong id="modal-nome-projeto"></strong>
+                <p>Você já possui cadastro em nosso site?</p>
+                <div class="modal-botoes">
+                    <button id="btn-ja-cadastrado" class="btn btn-principal">Sim, me voluntariar</button>
+                    <a href="/src/pages/cadastro.html" data-link class="btn btn-secundario">Não, ir para o cadastro</a>
+                </div>
+            </div>
+            <div id="modal-passo-2" class="hidden">
+                <h2>Inscrição Confirmada! ✅</h2>
+                <p id="mensagem-sucesso"></p>
+                <button id="btn-fechar-modal" class="btn btn-principal">Fechar</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ong EcoAção. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Caroline Oliveira</p>
+        </div>
+    </footer>
+
+    <script type="module" src="src/assets/javascript/app.js"></script>
+</body>
+</html>
