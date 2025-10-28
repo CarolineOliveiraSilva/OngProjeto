@@ -37,7 +37,7 @@ const templates = {
                 <h2 class="titulo-secao">Como Colocamos Nossos Valores em Prática</h2>
                 <div class="frentes-grid"></div>
                 <div class="cta-central">
-                    <a href="src/pages/projetos.html" class="botao" data-link>Veja Nossos Projetos em Ação</a>
+                    <a href="#src/pages/projetos.html" class="botao" data-link>Veja Nossos Projetos em Ação</a>
                 </div>
             </div>
         </section>
@@ -52,8 +52,8 @@ const templates = {
                 <h2 class="titulo-secao">Você é a peça que falta</h2>
                 <p>Sua ajuda, seja com seu tempo ou com recursos, impulsiona nosso trabalho.</p>
                 <div class="cta-botoes">
-                    <a href="src/pages/cadastro.html" class="botao" data-link>Quero ser Voluntário</a>
-                    <a href="src/pages/doacoes.html" class="botao" data-link>Fazer uma Doação</a>
+                    <a href="#src/pages/cadastro.html" class="botao" data-link>Quero ser Voluntário</a>
+                    <a href="#src/pages/doacoes.html" class="botao" data-link>Fazer uma Doação</a>
                 </div>
             </div>
         </section>

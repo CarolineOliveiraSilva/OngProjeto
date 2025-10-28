@@ -1,7 +1,6 @@
 :root {
 
-    --imagem-fundo-claro: url('../imagens/pexels-ron-lach-9543402.jpg');
-    --imagem-fundo-escuro: url(../imagens/pexels-ron-lach-9543414.jpg);
+  
 
     --color-primary: #4CAF50;
     --color-primary-dark: #388E3C;
@@ -56,12 +55,12 @@
    
 }
 [data-theme="dark"] main.pagina-index{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.979), rgba(0, 0, 0, 0.5)), url(../imagens/voluntarios1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.979), rgba(0, 0, 0, 0.5)), url(/src/assets/imagens/principal.jpg);
 
 
 }
 [data-theme="dark"] main.pagina-projetos{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.979), rgba(0, 0, 0, 0.5)), url(../imagens/projetos.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.979), rgba(0, 0, 0, 0.5)), url(/src/assets/imagens/projetos.webp);
 
 
 }
@@ -125,10 +124,10 @@ main#app-root {
     transition: background-image 0.5s ease-in-out;
 }
 main.pagina-index{
-    background-image: url(../imagens/voluntarios1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.233)), url(/src/assets/imagens/principal.jpg);
 }
 main.pagina-projetos{
-    background-image: url(../imagens/projetos.webp);
+    background-image: url(../imagens/escola.webp);
 }
 main.pagina-cadastro{
     background-image: url(../imagens/voluntarioss.webp);
