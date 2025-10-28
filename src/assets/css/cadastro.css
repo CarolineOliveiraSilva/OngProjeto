@@ -1,9 +1,4 @@
-body{
-    background-image: url(../imagens/voluntarioss.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+
 main {
     padding: var(--spacing-xl) var(--spacing-md);
     display: flex;
@@ -124,9 +119,19 @@ main h1 {
     margin-bottom: var(--spacing-sm);
     font-family: var(--font-family-secondary, 'Georgia', serif);
 }
-success-message p {
+.success-message p {
     color: var(--color-neutral-dark, #616161);
     font-size: var(--font-size-lg, 1.25rem);
+}
+.campo input.invalid,
+.campo select.invalid {
+    border-color: #F44336;
+}
+.error-message {
+    color: #F44336;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    display: block;
 }
 
 @keyframes fadeIn {

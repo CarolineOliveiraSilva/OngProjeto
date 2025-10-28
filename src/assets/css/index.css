@@ -1,17 +1,21 @@
 
 body{
-    background-image: url(../imagens/pexels-ron-lach-9543414.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    position: relative;
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-md);
+    line-height: 1.6;
+    color: var(--color-text-dark);
+    min-height: 100vh;
+    
 }
+
 .hero-banner {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: var(--color-text-light, #FFFFFF);
+    color: var(--color-text-light, #f3f0f0);
     padding: 0 var(--spacing-md);
     position: relative;
 }
@@ -36,6 +40,8 @@ body{
 
 .fundo-claro {
     background-color: #f8f9fa;
+    border-radius: var(--border-radius-lg, 16px);
+    box-shadow: var(--box-shadow-lg, 0 8px 25px);
 }
 
 .titulo-secao {
@@ -47,9 +53,10 @@ body{
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 var(--spacing-md);
+
 }
 
 /* --- Seção "Sobre Nós" --- */
@@ -70,7 +77,8 @@ body{
 
 .sobre-texto p {
     margin-bottom: var(--spacing-sm);
-    line-height: 1.8;
+    color: var(--color-text-light);
+    line-height: 2.8;
 }
 
 /* --- Seção "Frentes de Ação" --- */
@@ -81,7 +89,7 @@ body{
 }
 
 .frente-card {
-    background: var(--color-background-paper, #FFFFFF);
+    background: var(--color-background-paper, #f8f7f7);
     padding: var(--spacing-lg);
     border-radius: var(--border-radius-lg, 16px);
     box-shadow: var(--box-shadow-md, 0 4px 15px rgba(0, 0, 0, 0.1));
@@ -118,7 +126,7 @@ body{
     color: var(--color-neutral-dark, #616161);
 }
 
-/* --- Seção "CTA" (Call to Action) --- */
+
 .cta-container {
     text-align: center;
 }
@@ -126,16 +134,17 @@ body{
 .cta-container p {
     max-width: 600px;
     margin: 0 auto var(--spacing-lg) auto;
+    
 }
 
 .cta-botoes {
     display: flex;
     justify-content: center;
     gap: var(--spacing-md);
-    flex-wrap: wrap; /* Para telas menores */
+    flex-wrap: wrap; /
 }
 
-/* --- Estilo Geral do Botão --- */
+
 .botao {
     display: inline-block;
     padding: 15px 30px;
