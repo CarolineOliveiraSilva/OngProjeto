@@ -27,8 +27,20 @@ const router = {
         menuCheckbox.checked = false;
     }
 },
-    async loadPage(path) {
-        const normalizedPath = (path === '/' || path.endsWith('/index.html')) ? '/' : path;
+async loadPage(path) {
+
+    const classesDePagina = ['pagina-index','pagina-projetos', 'pagina-cadastro', 'pagina-doacoes'];
+    this.appRoot.classList.remove(...classesDePagina);
+
+let nomeDaPagina = 'index';
+if (path !== '/' && path !== '/index.html') {
+
+nomeDaPagina = path.split('/').pop().replace('.html', '');
+}
+this.appRoot.classList.add(`pagina-${nomeDaPagina}`);
+
+
+const normalizedPath = (path === '/' || path.endsWith('/index.html')) ? '/' : path;
         if (normalizedPath === '/') {
             renderer.renderHomePage();
             return;

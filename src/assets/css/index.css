@@ -6,11 +6,7 @@ body{
     line-height: 1.6;
     color: var(--color-text-dark);
     min-height: 100vh;
-    background-image: url(../imagens/pexels-sally-williams-760820812-29877670.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    
 }
 
 .hero-banner {
@@ -19,7 +15,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: var(--color-text-light, #FFFFFF);
+    color: var(--color-text-light, #f3f0f0);
     padding: 0 var(--spacing-md);
     position: relative;
 }
@@ -44,6 +40,8 @@ body{
 
 .fundo-claro {
     background-color: #f8f9fa;
+    border-radius: var(--border-radius-lg, 16px);
+    box-shadow: var(--box-shadow-lg, 0 8px 25px);
 }
 
 .titulo-secao {
@@ -55,9 +53,10 @@ body{
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 var(--spacing-md);
+
 }
 
 /* --- Seção "Sobre Nós" --- */
@@ -90,7 +89,7 @@ body{
 }
 
 .frente-card {
-    background: var(--color-background-paper, #ffffff);
+    background: var(--color-background-paper, #f8f7f7);
     padding: var(--spacing-lg);
     border-radius: var(--border-radius-lg, 16px);
     box-shadow: var(--box-shadow-md, 0 4px 15px rgba(0, 0, 0, 0.1));
@@ -135,6 +134,7 @@ body{
 .cta-container p {
     max-width: 600px;
     margin: 0 auto var(--spacing-lg) auto;
+    
 }
 
 .cta-botoes {
