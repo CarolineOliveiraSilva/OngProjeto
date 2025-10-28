@@ -177,11 +177,45 @@
     display: none;
 }
 
-@media (max-width: 900px) {
-    .projeto-detalhado {
+@media (max-width: 768px) {
+    .projeto-detalhado,
+    .projeto-detalhado:nth-child(even) {
         flex-direction: column;
+        padding: 0;
+        margin-bottom: 30px;
+        box-shadow: none;
     }
+
     .projeto-imagem {
-        max-height: 250px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .projeto-imagem img {
+        border-radius: 0;
+    }
+
+    .projeto-info {
+        padding: 20px;
+        width: 100%;
+        background-color: var(--color-surface);
+        border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
+    }
+
+    .lista-objetivos {
+        padding-left: 20px;
+    }
+
+    .lista-objetivos li {
+        margin-bottom: 10px;
+    }
+
+    .projeto-cta {
+        text-align: center;
+    }
+
+    .btn-voluntariar {
+        width: 100%;
+        max-width: 300px;
     }
 }

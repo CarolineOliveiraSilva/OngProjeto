@@ -70,7 +70,7 @@
 
 }
 [data-theme="dark"] main.pagina-doacoes{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.979), rgba(0, 0, 0, 0.5)),  url(../imagens/pexels-minan1398-970594.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.979), rgba(0, 0, 0, 0.5)),  url(../imagens/doaçao.jpg);
 
 
 }
@@ -127,7 +127,7 @@ main.pagina-index{
     background-image: linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.233)), url(../imagens/principal.jpg);
 }
 main.pagina-projetos{
-    background-image: url(../imagens/escola.webp);
+    background-image: url(../imagens/projetos.webp);
 }
 main.pagina-cadastro{
     background-image: url(../imagens/voluntarioss.webp);
