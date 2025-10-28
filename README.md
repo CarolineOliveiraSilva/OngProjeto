@@ -37,15 +37,25 @@ O projeto foi construído utilizando as seguintes tecnologias e ferramentas:
 
 ## 📂 Estrutura do Projeto
 
-O repositório está organizado da seguinte forma para facilitar a manutenção e escalabilidade:ONGPROJETO/ ├── .gitattributes ├── .hintrc ├── index.html # Página inicial ├── LICENSE # Licença de uso do código ├── README.md # Documentação do projeto ├── pages/ # Demais páginas HTML │ ├── cadastro.html │ ├── doacoes.html │ └── projetos.html └── src/ # Código-fonte e recursos ├── assets/ │ ├── css/ # Arquivos de estilo (global, por página, etc.) │ └── imagens/ # Imagens e ícones otimizados └── javascript/ # Lógica e interatividade do site ├── app.js ├── global.js ├── index.js └── modules/ # Módulos JavaScript específicos      
-## 🎯 Desafios e Aprendizados
+O repositório está organizado da seguinte forma para facilitar a manutenção e escalabilidade:
 
-Este projeto aplicou conceitos importantes de desenvolvimento profissional, incluindo:
-
-* **Controle de Versão com GitFlow:** Utilização de branches `main`, `develop` e `feature-branches` para um desenvolvimento organizado e seguro. O histórico foi mantido limpo com **commits semânticos**.
-* **Acessibilidade (WCAG 2.1 AA):** Implementação de práticas para garantir que o site seja utilizável por todas as pessoas, incluindo navegação por teclado, contraste de cores adequado e estrutura semântica para leitores de tela.
-* **Otimização para Produção:** As imagens foram comprimidas e os arquivos CSS e JavaScript foram "minificados" para garantir um carregamento mais rápido e eficiente do site.
-
+- **ONGPROJETO/** (Raiz do Projeto)
+  - `index.html` # Página inicial
+  - `README.md` # Documentação do projeto
+  - `LICENSE` # Licença de uso do código
+  - `pages/` # Demais páginas HTML
+    - `cadastro.html`
+    - `doacoes.html`
+    - `projetos.html`
+  - `src/` # Código-fonte e recursos
+    - `assets/`
+      - `css/` # Arquivos de estilo (global, por página, etc.)
+      - `imagens/` # Imagens e ícones otimizados
+    - `javascript/` # Lógica e interatividade do site
+      - `app.js` # Ponto de entrada
+      - `global.js`
+      - `index.js`
+      - `modules/` # Módulos JavaScript específicos
 ---
 
 ## 🏁 Como Executar Localmente
