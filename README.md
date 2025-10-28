@@ -37,8 +37,7 @@ O projeto foi construído utilizando as seguintes tecnologias e ferramentas:
 
 ## 📂 Estrutura do Projeto
 
-O repositório está organizado da seguinte forma para facilitar a manutenção e escalabilidade:                                 ONGPROJETO/ ├── .gitattributes ├── .hintrc ├── index.html # Página inicial ├── LICENSE # Licença de uso do código ├── README.md # Documentação do projeto ├── pages/ # Demais páginas HTML │ ├── cadastro.html │ ├── doacoes.html │ └── projetos.html └── src/ # Código-fonte e recursos ├── assets/ │ ├── css/ # Arquivos de estilo (global, por página, etc.) │ └── imagens/ # Imagens e ícones otimizados └── javascript/ # Lógica e interatividade do site ├── app.js ├── global.js ├── index.js └── modules/ # Módulos JavaScript específicos                                       
-
+O repositório está organizado da seguinte forma para facilitar a manutenção e escalabilidade:ONGPROJETO/ ├── .gitattributes ├── .hintrc ├── index.html # Página inicial ├── LICENSE # Licença de uso do código ├── README.md # Documentação do projeto ├── pages/ # Demais páginas HTML │ ├── cadastro.html │ ├── doacoes.html │ └── projetos.html └── src/ # Código-fonte e recursos ├── assets/ │ ├── css/ # Arquivos de estilo (global, por página, etc.) │ └── imagens/ # Imagens e ícones otimizados └── javascript/ # Lógica e interatividade do site ├── app.js ├── global.js ├── index.js └── modules/ # Módulos JavaScript específicos      
 ## 🎯 Desafios e Aprendizados
 
 Este projeto aplicou conceitos importantes de desenvolvimento profissional, incluindo:
