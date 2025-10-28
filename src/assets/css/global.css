@@ -124,7 +124,7 @@ main#app-root {
     transition: background-image 0.5s ease-in-out;
 }
 main.pagina-index{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.233)), url(/src/assets/imagens/principal.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.233)), url(../imagens/principal.jpg);
 }
 main.pagina-projetos{
     background-image: url(../imagens/escola.webp);
