@@ -1,17 +1,18 @@
 const express = require('express');
 const mysql = require('mysql2/promise'); 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const path = require('path'); 
 
 
 
 const dbConfig = {
-    host: 'localhost',
-    user: 'ana',
-    password: '0531', 
-    database: 'ong_cadastro', 
-    multipleStatements: true 
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE,
+    multipleStatements: true
 };
 
 
@@ -87,6 +88,8 @@ app.post('/cadastrar', async (req, res) => {
     }
 });
 
+
+
 app.listen(port, () => {
-    console.log(`Servidor rodando em http://localhost:${port}`);
+    console.log(`Servidor rodando na porta ${port}`);
 });
